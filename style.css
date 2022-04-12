@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SignUp Form Start */
+body {
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+.signUpParent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formBox {
+  width: 80%;
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-left: 50px;
+}
+.inputBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+.inputBox1 {
+  width: 35%;
+}
+.inputBox2 {
+  width: 35%;
+}
+.inputBox input {
+  margin: 10px 0;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  background-color: #e5e5e5;
+  border-color: #5d74ff;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.inputBox input::placeholder {
+  color: #000;
+}
+.drpdownBox {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  background-color: #fff;
+  margin: 10px 0;
+  border: 2px solid #5d74ff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.imgBox {
+  margin-top: 10px;
+  border: 2px solid #5d74ff;
+  height: 110px;
+  background-color: #fff;
+  width: 50%;
+  margin-left: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.resumeParent {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.resumeBox {
+  border: 2px solid #5d74ff;
+  width: 80%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.btnbox {
+  width: 80%;
+  margin: 20px auto;
+}
+.btnbox button {
+  padding: 8px;
+  width: 150px;
+  background-color: #2ad9da;
+  border: none;
+  color: #fff;
+  border-radius: 15px;
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+/* SignUp Form End */
+/* drag And Drop start */
+.drop-zone {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #cccccc;
+  height: 110px;
+  width: 100%;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+.drop-zone__prompt {
+  color: #000;
+  margin-left: 15px;
+}
+/* drag And Drop End */
+/* Login Form Start */
+.loginFormBox {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.loginFormBox form {
+  /* border: 1px solid gray; */
+  padding: 50px 50px;
+  width: 400px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.loginFormBox form input {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  background-color: #fff;
+  border-color: #5d74ff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.loginBtn {
+  margin: 15px 0;
+  /* border: 1px solid; */
+}
+.loginBtn button {
+  padding: 8px;
+  border: none;
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  width: 120px;
+  border-radius: 15px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+/* Login Form End */
+
+/* Employe start */
+.employeParent {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.dropDownBox {
+  width: 320px;
+  margin: 0 0 10px 0;
+  border: 1px solid #5d74ff;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.dropDownBox select {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: #fff;
+}
+.imgEmployBox {
+  border: 2px solid #5d74ff;
+  width: 150px;
+  background-color: #e5e5e5;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.textAreaBox {
+  border: 2px solid #5d74ff;
+  margin: 50px 0;
+  width: 70%;
+  height: 104px;
+  background: #fff;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.textAreaBox textarea {
+  width: 100%;
+  border: none;
+  height: 100px;
+  padding: 5px;
+  resize: none;
+  outline: none;
+  background-color: #e5e5e5;
+}
+/* Employe Card End */
+.candidateBtn {
+  text-align: center;
+  margin: 10px 0;
+}
+.candidateBtn button {
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 150px;
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.emloyeListBox {
+  background-color: #e5e5e5;
+}
+.cardBox {
+  padding: 10px 5px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.cardBox div {
+  display: flex;
+  margin: 5px;
+  align-items: center;
+}
+.descriptionBox {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+}
+.userImgBox {
+  /* border: 1px solid; */
+  border-radius: 50%;
+  width: 80px;
+}
+.userImgBox img {
+  border-radius: 50%;
+}
+.para2 {
+  margin: 8px 0 0 20px;
+}
+.descriptionBox span {
+  font-size: 0.8rem;
+  color: gray;
+  margin-left: 20px;
+}
+.cardBox .description {
+  background-color: #2ad9da;
+  border: none;
+  border-radius: 15px;
+  margin-left: 10px;
+  width: 90%;
+  color: #fff;
+  padding: 8px;
+  min-height: 40px;
+}
+/* Employe Card End */
+/* Sight Drawer Start */
+.sightDrawer {
+  /* border: 1px solid; */
+  padding: 10px;
+  width: 18%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #7f82d6;
+}
+.adminBox {
+  color: #fff;
+  margin: 10px 0;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+.adminBox p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.adminBox p i {
+  margin-right: 8px;
+}
+.dashboardBox {
+  padding: 5px 0;
+}
+.dashboardBox p {
+  color: #fff;
+  margin: 0;
+}
+.dashboardBox p i {
+  margin-right: 8px;
+}
+.interfaceBox {
+  margin: 10px 0;
+  border-top: 1px solid lightgray;
+  padding-top: 10px;
+  color: lightgray;
+  font-size: 0.8rem;
+}
+.candidate {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10pxs;
+  color: #fff;
+}
+.candidate p {
+  /* border: 1px solid; */
+  margin: 10px 0;
+}
+.candidate p i {
+  margin-right: 5px;
+}
+.addons {
+  /* border-bottom:1px solid; */
+  padding: 15px 0;
+  font-size: 0.8rem;
+  color: lightgray;
+}
+.pagesChart {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+.pagesChart p {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.pagesChart p i {
+  margin-right: 8px;
+}
+.arrowBox {
+  position: relative;
+  text-align: center;
+  top: 35px;
+}
+.arrowBox i {
+  /* border: 1px solid; */
+  border-radius: 50%;
+  color: #fff;
+  /* background-color: #2ad9da; */
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  padding: 10px 15px;
+}
+/* border: 1px solid red; */
+
+/* Sight Drawer End */
+
+/* Media Query */
+@media only screen and (max-width: 992px) {
+  .formBox {
+    margin: 0;
+    padding: 10px;
+  }
+  .signUpParent {
+    height: 140vh;
+  }
+  .inputBox {
+    flex-direction: column;
+  }
+  .inputBox1 {
+    width: 100%;
+  }
+  .inputBox2 {
+    width: 100%;
+  }
+  .resumeBox {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .sightDrawer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .textAreaBox {
+    width: 100%;
+  }
+  .dropDownBox {
+    width: 100%;
+  }
+  .signUpParent {
+    height: 150vh;
+  }
+}
